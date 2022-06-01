@@ -18,3 +18,21 @@ Pour installer `SASS` le moyen le plus sure est d'utiliser le gestion de dependa
 
 Apres cela vous pouvez maintenant coder en SASS et generer votre fichier CSS à la fin, pour generer un fichier CSS on utilise la commande suivante
 `sass PAthToSASSFile PathToCSSFile` par exemple `sass assets/scss/app.scss assets/css/style.css`, avec cette commande SASS va compiler son code et va generer un fichier `CSS`, si le dossier existe mais que le fichier styles.css n'existe pas, SASS va créer ce fichier
+
+## A quoi sert le fichier map
+
+Le ficher `.css.map` est un fichier qui est generer par SASS lorsque l'on compile le code à fin de generer un fichier CSS, ce fichier map va permettre d'indiquer aux navigateur la correspondance entre une ligne CSS et une ligne SCSS, grace à ce fichier .css.map le navigateur peut savoir à quel ligne à été écrit une regle spefique dans le fichier `scss` ou `sass`, ce fichier nous permet de trouver la correspondance et de pouvoir voir les erreurs dans notre fichier source original si il y en  et pas forcement dans le fichier `css` qui a été compiler, c'est un outils très important pendant le developpement que on enlevera pendant la mise en production
+
+## Les fonctionnalités de SCSS ous SASS
+
+### L'import des fichiers
+
+On peut avoir un fichier `scss` ou `css` qui nous est utilise dans notre fichier stylisation, avec SASS on peut l'importer en utilant la syntaxe `@import "PathToTheCSSOrSCSSFileToImport"` par exemple `@import "libs/reset.scss"`
+
+### Imbrication(Nested Rules)
+
+Le principe d'imbrication avec SCSS, le principe est que l'on va pouvoir imbriquer des regles CSS ou des elements CSS les une dans les autres pour eviter la repetition
+![Imbrication SCSS](/assets/img/Imbrication-SCSS.PNG)
+![Imbrication SCSS](/assets/img/Imbrication-SCSS-2.PNG)
+
+### La notion d'heritage

@@ -1,0 +1,20 @@
+{
+  "name": "basics",
+  "version": "1.0.0",
+  "description": "SASS est un preprocesseur que l'on retrouve dans pas mal de projet aujourd'hui et qui a l'avantage et qui a l'avantage d'integrer tout un tas des fonctionnalités qui vont vous permettre d'ecrire du CSS de maniere plus organiser et plus propre",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass ./assets/scss/app.scss ./assets/css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NdekoCode/sass-css-preprocessor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NdekoCode/sass-css-preprocessor/issues"
+  },
+  "homepage": "https://github.com/NdekoCode/sass-css-preprocessor#readme"
+}

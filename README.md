@@ -38,4 +38,10 @@ Le principe d'imbrication avec SCSS, le principe est que l'on va pouvoir imbriqu
 ### La notion d'heritage
 
 Le principe de l'heritage c'est de dire que une balise ou un selecteur va agir comme un autre selecteur
-Cela permet de definir des comportement génériques sur les selecteurs ou les proprieter, pour dire que un selecteur ou une proprieter herite des comportement d'un autre on utilise le mot clé `@extend`
+Cela permet de definir des comportement génériques sur les selecteurs ou les proprieter et ainsi permettre de ne pas trop se repeter, pour dire que un selecteur ou une proprieter herite des comportement d'un autre on utilise le mot clé `@extend` suivis du selecteur dont vous voulez etendre
+
+![Heritage](/assets/img/heritage.png)
+
+On peut l'utiliser de façon simple ou de façon plus generique en utilisant des faux selecteurs qui commencent par un `%`
+
+![Heritage en utilisant un selecteur generique](/assets/img/Heritage-2.png)

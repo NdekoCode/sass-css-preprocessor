@@ -1,21 +1,21 @@
 @import "./libs/reset.scss";
 
 .btn {
-    background-color: rgb(99, 122, 255);
+    padding: 5px 12px;
+    background-color: rgba(105, 143, 214);
+    color: #fff;
+    text-decoration: none;
+
 
     &:hover {
-        background-color: rgb(62, 81, 189);
-
+        background-color: rgb(67, 98, 155);
     }
 
-    .theme-green & {
-        background-color: green;
-    }
+}
 
-    @media only screen and (max-width:1200px) {
-        padding: 10px;
-    }
-
+.btn-danger {
+    @extend .btn;
+    background-color: red;
 }
 
 .call-to-action {

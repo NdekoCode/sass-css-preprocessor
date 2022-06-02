@@ -27,7 +27,7 @@ Le ficher `.css.map` est un fichier qui est generer par SASS lorsque l'on compil
 
 ### L'import des fichiers
 
-On peut avoir un fichier `scss` ou `css` qui nous est utilise dans notre fichier stylisation, avec SASS on peut l'importer en utilant la syntaxe `@import "PathToTheCSSOrSCSSFileToImport"` par exemple `@import "libs/reset.scss"`
+On peut avoir un fichier `scss` ou `css` qui nous est utilise dans notre fichier stylisation, avec SASS on peut l'importer en utilant la syntaxe `@import "PathToTheCSSOrSCSSFileToImport"` par exemple `@import "libs/reset.scss"`, quand vous importer un fichier vous importer toutes les variables, les fonctions, les propriétés qui sont à l'interieur.
 
 ### Imbrication(Nested Rules)
 
@@ -45,3 +45,21 @@ Cela permet de definir des comportement génériques sur les selecteurs ou les p
 On peut l'utiliser de façon simple ou de façon plus generique en utilisant des faux selecteurs qui commencent par un `%`
 
 ![Heritage en utilisant un selecteur generique](/assets/img/Heritage-2.png)
+
+### Les variables
+
+Pour declarer une variable dans `SASS` on utilise les memes règles que dans le language `PHP` càd avec un signe `$` par exemple `$space: 12px` ou `$medium-up: "only screen and(max-width: 768px)"`
+Si dans une variable vous avez des chaines de caracteres qui contient des contenus css convertissable pour convertir ce contenus il faudra l'entourer d'un `#` suivis d'une accolade
+
+![interpollation des variables](/assets/img/interpollation-variables.png)
+
+On peut se demander dans les variables quelle est la priorité, qui gagne, qu'est-ce qui se passe si j'ai deux variable qui on le meme nom mais qui sont declarer à plusieurs endroit differents
+Si une variable est definis à plusieurs endroit c'est la derniere definitions qui l'importe
+Mais si vous ajouter un un `!default` après la valeur de la variable alors cette variable prendra sa valeur si cette variable n'as pas eté definit au préalable ie si elle n'est definit et initialiser avec une valeur null autre par ailleurs
+Cela peut permettre de definir les regles de base par exemple
+
+Dans l'utilisation des variables on peux aussi voir les fonctions, les fonctions vous permettent d'effectuer quelques petites operations qui peuvent etre plus ou moins utile suivant la situation, parmis les fonctions utiles on a les fonctions
+
+`darken` et `lighten` qui nous permettent respectivement d'assombrir ou d'eclaircir une couleur, ces deux fonctionss fonctionnent un peu de la meme maniere ils prennent en premiers parametres la couleur sous forme d'une variable ou d'une valeur en format de couleur acceptable et en second parametres de combien on veut assombrir ou eclaircir.
+
+![Fonctions natifs SASS](/assets/img/darken-lighten.png)

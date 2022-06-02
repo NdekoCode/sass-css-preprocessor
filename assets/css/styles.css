@@ -85,4 +85,19 @@ a {
   color: inherit;
 }
 
+.btn, .call-to-action {
+  background-color: rgb(99, 122, 255);
+}
+.btn:hover, .call-to-action:hover {
+  background-color: rgb(62, 81, 189);
+}
+.theme-green .btn, .theme-green .call-to-action {
+  background-color: green;
+}
+@media only screen and (max-width: 1200px) {
+  .btn, .call-to-action {
+    padding: 10px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

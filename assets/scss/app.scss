@@ -1,1 +1,23 @@
-@import "./libs/reset.scss"
+@import "./libs/reset.scss";
+
+.btn {
+    background-color: rgb(99, 122, 255);
+
+    &:hover {
+        background-color: rgb(62, 81, 189);
+
+    }
+
+    .theme-green & {
+        background-color: green;
+    }
+
+    @media only screen and (max-width:1200px) {
+        padding: 10px;
+    }
+
+}
+
+.call-to-action {
+    @extend .btn;
+}

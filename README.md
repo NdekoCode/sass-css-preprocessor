@@ -75,3 +75,14 @@ Pour créer un mixins vous utiliser la syntaxe `@mixin NameOfMixin {}` c'est à 
 Maintenant si j'ai souhaite utiliser cette mixin il suffit d'utiliser un `@include NameOfMixin`
 
 ![Utiliser un mixin](/assets/img/mixin-usage.PNG)
+
+Les mixins sont utiliser comme les fonctions, car ils ont eux aussi la capacité de prendre des parametres
+ et ces parametres peuvent ou ne pas avoir des valeurs par defaut
+
+![Utiliser un mixin avec des parametres](/assets/img/mixin-parameter.PNG)
+![Utiliser un mixin avec des parametres](/assets/img/mixin-parameter-1.PNG)
+![Utiliser un mixin avec des parametres](/assets/img/mixin-parameter-2.PNG)
+
+On peux avoir des mixins qui utilisent d'autres mixins, en s'utilisant les un des autres cela nous permet d'eviter au maximum la repetition
+
+![Utiliser un mixin avec des parametres](/assets/img/mixin-parameter-3.PNG)

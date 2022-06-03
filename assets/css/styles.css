@@ -90,18 +90,30 @@ p {
   margin: 0.6rem 0;
 }
 
+.card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 .btn, .call-to-action, .btn-danger {
   padding: 5px 12px;
-  background-color: rgb(105, 143, 214);
+  border-radius: 4px;
+  background-color: #698fd6;
   color: #fff;
   text-decoration: none;
 }
 .btn:hover, .call-to-action:hover, .btn-danger:hover {
-  background-color: rgb(67, 98, 155);
+  background-color: #43629b;
 }
 
 .btn-danger {
   background-color: red;
+}
+
+.card {
+  padding: 10px;
+  -ms-transform: rotate10;
+  -webkit-transform: rotate10;
+  transform: rotate(10deg);
 }
 
 /*# sourceMappingURL=styles.css.map */

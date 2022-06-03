@@ -13,6 +13,7 @@ On va essayer de passer en revus l'ensemble des fonctionnalités de SASS et comm
 
 ## Installation
 
+2
 Pour installer `SASS` le moyen le plus sure est d'utiliser le gestion de dependance de nodeJS càd `npm`, et pour cela il faut prealablement avoir installer nodeJS, ainsi pour installer SASS en utilisant `npm` on utilise la commande suivante
 `npm install -g sass`
 
@@ -63,3 +64,14 @@ Dans l'utilisation des variables on peux aussi voir les fonctions, les fonctions
 `darken` et `lighten` qui nous permettent respectivement d'assombrir ou d'eclaircir une couleur, ces deux fonctionss fonctionnent un peu de la meme maniere ils prennent en premiers parametres la couleur sous forme d'une variable ou d'une valeur en format de couleur acceptable et en second parametres de combien on veut assombrir ou eclaircir.
 
 ![Fonctions natifs SASS](/assets/img/darken-lighten.png)
+
+## Les mixins et comment créer nos propres fonctions
+
+Le principe mixins c'est quelque chose qui va vous permettre d'eviter de repeter un block de code
+Pour créer un mixins vous utiliser la syntaxe `@mixin NameOfMixin {}` c'est à l'interieur de ces accollades que l'on va placer le code que l'on ne veut pas repeter.
+
+![Mixin](/assets/img/mixin-declaration.PNG)
+
+Maintenant si j'ai souhaite utiliser cette mixin il suffit d'utiliser un `@include NameOfMixin`
+
+![Utiliser un mixin](/assets/img/mixin-usage.PNG)

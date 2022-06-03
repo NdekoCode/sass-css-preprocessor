@@ -1,8 +1,15 @@
-@import "./libs/variables.scss";
-@import "./libs/reset.scss";
+@import "./libs/variables";
+@import "./libs/reset";
+@import "./libs/mixins";
+
+
+%shadow {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
 
 .btn {
     padding: 5px 12px;
+    border-radius: 4px;
     background-color: rgba(105, 143, 214);
     color: #fff;
     text-decoration: none;
@@ -21,4 +28,11 @@
 
 .call-to-action {
     @extend .btn;
+}
+
+.card {
+    @extend %shadow;
+    padding: $space;
+    @include rotate10;
+
 }

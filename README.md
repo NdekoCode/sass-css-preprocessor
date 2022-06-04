@@ -95,3 +95,29 @@ En utilisan les pseudo-element
 
 ![Utiliser un mixin avec des parametres](/assets/img/mixin-with-pseudo-element.PNG)
 ![Utiliser un mixin avec des parametres](/assets/img/mixin-with-pseudo-element-2.PNG)
+
+Pour creer des fonction Avec SASS on utlise le mot clé `@function NameOfFunction($parameter){}`
+
+![Utiliser Les fonctions en SASS](/assets/img/function-Sass.PNG)
+
+## Les conditions
+
+En sass on a aussi les conditions `@if {}...@else{}`  et `@else if` qui s'utilisent selon les besoins
+
+```{SASS}
+@if $light-theme {
+    background-color: $light-background;
+    color: $light-text;
+  } @else {
+    background-color: $dark-background;
+    color: $dark-text;
+  }
+
+```
+
+## Les boucles
+
+On a aussi la possibilité de faire des boucles en SASS et on a la boucle `@for` et la boucle `@each`
+
+![Les boucles avec SASS](/assets/img/loop-SASS.PNG)
+![Les boucles avec SASS](/assets/img/loop-SASS-1.PNG)

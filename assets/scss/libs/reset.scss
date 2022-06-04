@@ -60,6 +60,10 @@ html {
     box-sizing: border-box
 }
 
+body {
+    background-color: rgb(209, 204, 204);
+}
+
 img,
 video,
 iframe {
@@ -89,3 +93,5 @@ a {
 p {
     margin: 0.6rem 0;
 }
+
+@include makeMargin();

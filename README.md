@@ -86,3 +86,12 @@ Les mixins sont utiliser comme les fonctions, car ils ont eux aussi la capacité
 On peux avoir des mixins qui utilisent d'autres mixins, en s'utilisant les un des autres cela nous permet d'eviter au maximum la repetition
 
 ![Utiliser un mixin avec des parametres](/assets/img/mixin-parameter-3.PNG)
+
+On peut aussi créer des mixins qui utilisent des elements et des pseudos elements
+
+![Utiliser un mixin avec des parametres](/assets/img/mixin-without-element-or-pseudo-element.PNG)
+
+En utilisan les pseudo-element
+
+![Utiliser un mixin avec des parametres](/assets/img/mixin-with-pseudo-element.PNG)
+![Utiliser un mixin avec des parametres](/assets/img/mixin-with-pseudo-element-2.PNG)

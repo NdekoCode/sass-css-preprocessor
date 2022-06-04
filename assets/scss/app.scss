@@ -1,14 +1,15 @@
 @import "./libs/variables";
-@import "./libs/reset";
 @import "./libs/mixins";
+@import "./libs/functions";
+@import "./libs/reset";
 
 
 %shadow {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 rem(2px) rem(5px) rgba(0, 0, 0, 0.3);
 }
 
 .btn {
-    padding: 5px 12px;
+    padding: rem(5px) rem(12px);
     border-radius: 4px;
     background-color: rgba(105, 143, 214);
     color: #fff;
@@ -32,7 +33,23 @@
 
 .card {
     @extend %shadow;
+    @include rotate(0deg);
+    @include triangleTop;
     padding: $space;
-    @include rotate10;
+    background-color: #fff;
+}
 
+@each $category in $categories {
+    .#{nth($category,1)} {
+        background-color: nth($category, 2);
+
+        @if(lightness(nth($category, 2)) > 50%) {
+            color: #333;
+
+        }
+
+        @else {
+            color: #f1f1f1;
+        }
+    }
 }

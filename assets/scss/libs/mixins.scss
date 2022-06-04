@@ -1,5 +1,48 @@
-@mixin rotate10 {
-    -ms-transform: rotate10;
-    -webkit-transform: rotate10;
-    transform: rotate(10deg);
+@mixin rotate($rotate: 10deg) {
+    @include transform(rotate($rotate))
+}
+
+@mixin transform($transform) {
+    -ms-transform: $transform;
+    -webkit-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform
+}
+
+@mixin triangleBottom ($color:#fff, $size: 10px) {
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: $size solid $color;
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        bottom: $size * -1;
+        left: calc(50% - #{$size});
+
+    }
+}
+
+@mixin triangleTop ($color:#fff, $size: 10px) {
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-bottom: $size solid $color;
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        top: $size * -1;
+        left: calc(50% - #{$size});
+
+    }
+}
+
+@mixin makeMargin() {
+    @for $i from 1 through 5 {
+        .m-#{$i} {
+            margin: $i * 0.25rem;
+        }
+    }
 }
